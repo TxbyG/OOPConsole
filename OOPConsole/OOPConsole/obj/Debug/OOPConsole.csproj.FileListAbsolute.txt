@@ -1,0 +1,8 @@
+C:\Users\Computing\source\repos\OOPConsole\OOPConsole\bin\Debug\OOPConsole.exe.config
+C:\Users\Computing\source\repos\OOPConsole\OOPConsole\bin\Debug\OOPConsole.exe
+C:\Users\Computing\source\repos\OOPConsole\OOPConsole\bin\Debug\OOPConsole.pdb
+C:\Users\Computing\source\repos\OOPConsole\OOPConsole\obj\Debug\OOPConsole.csproj.AssemblyReference.cache
+C:\Users\Computing\source\repos\OOPConsole\OOPConsole\obj\Debug\OOPConsole.csproj.SuggestedBindingRedirects.cache
+C:\Users\Computing\source\repos\OOPConsole\OOPConsole\obj\Debug\OOPConsole.csproj.CoreCompileInputs.cache
+C:\Users\Computing\source\repos\OOPConsole\OOPConsole\obj\Debug\OOPConsole.exe
+C:\Users\Computing\source\repos\OOPConsole\OOPConsole\obj\Debug\OOPConsole.pdb
