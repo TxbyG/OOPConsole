@@ -1,12 +1,20 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
 using System.Text;
-using System.Threading.Tasks;
 
 namespace OOPConsole
 {
     internal class Tutorial
     {
+
+        // Inform the user on how to use the console.
+        public static void Instructions(string[] args)
+        {
+            Console.Clear();
+            Console.WriteLine("Test");
+            Console.WriteLine("Test");
+            Console.WriteLine("Test");
+            Console.WriteLine("Test");
+            Console.WriteLine("Test");
+        }
     }
 }

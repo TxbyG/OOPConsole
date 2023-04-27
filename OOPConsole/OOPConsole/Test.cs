@@ -1,12 +1,17 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
+using System.IO;
 using System.Text;
-using System.Threading.Tasks;
 
 namespace OOPConsole
 {
     internal class Test
     {
+
+        // Use this file to test the maths questions.
+        // Save data to txt file.
+        public static void Tests(string[] args)
+        {
+            Console.Clear();
+        }
     }
 }

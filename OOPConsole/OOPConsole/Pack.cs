@@ -1,12 +1,13 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
 using System.Text;
-using System.Threading.Tasks;
 
 namespace OOPConsole
 {
     internal class Pack
     {
+        public static void Packs(String[] args)
+        {
+            // generate the pack of cards
+        }
     }
 }

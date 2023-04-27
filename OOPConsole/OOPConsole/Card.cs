@@ -1,12 +1,13 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
 using System.Text;
-using System.Threading.Tasks;
 
 namespace OOPConsole
 {
     internal class Card
     {
+        public static void Cards(String[] args) 
+        { 
+            // Generate cards
+        }
     }
 }
