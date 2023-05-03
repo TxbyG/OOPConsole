@@ -15,35 +15,40 @@ namespace OOPConsole
             StartApp(args);
         }
 
-        static void StartApp(string[] args)
+        public static void StartApp(string[] args)
         {
             Console.Clear();
             Console.WriteLine("");
             Console.WriteLine("Welcome to the LinCode Tutorial.");
             Console.WriteLine("------------------------");
             Console.WriteLine("");
-            Console.WriteLine("1. Instructions.");
+            Console.WriteLine("1. Tutorial.");
             Console.WriteLine("2. Deal 3 cards.");
-            Console.WriteLine("3. Quit.");
+            Console.WriteLine("3. Test.");
+            Console.WriteLine("4. Quit.");
             Console.WriteLine("");
 
             string User_input = Console.ReadLine();
 
-            switch (User_input)
+            if (User_input == 1)
             {
-                case "1":
-                    Tutorial.Instructions(args);
-                    break;
-                case "2":
-                    Test.Tests(args);
-                    break;
-                case "3":
-                    ExitApp(args);
-                    break;
-                default:
-                    StartApp(args);
-                    break;
-                
+                Tutorial.Instructions();
+            }
+            if (User_input == 2)
+            {
+                Pack.Packs();
+            }
+            if (User_input == 3)
+            {
+                Test.Tests();
+            }
+            if (User_input == 4)
+            {
+                ExitApp();
+            }
+            else
+            {
+                Console.WriteLine("Error! please try again");
             }
         }
 

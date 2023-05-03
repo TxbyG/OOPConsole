@@ -1,5 +1,7 @@
 ﻿using System;
 using System.Text;
+using System.IO;
+using System.Security.Cryptography.X509Certificates;
 
 namespace OOPConsole
 {
@@ -8,6 +10,7 @@ namespace OOPConsole
         public static void Cards(String[] args) 
         { 
             // Generate cards
+
         }
     }
 }
