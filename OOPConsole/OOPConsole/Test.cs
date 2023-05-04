@@ -7,6 +7,20 @@ namespace OOPConsole
 {
     internal class Test
     {
+        // Random String generator
+        private const string CHARACTERS = "*/+-";
+        private static readonly Random random = new Random();
+
+        public static string Generate(int length)
+        {
+            var sb = new StringBuilder(length);
+            for (int i = 0; i < length; i++)
+            {
+                int index = random.Next(CHARACTERS.Length);
+                sb.Append(CHARACTERS[index]);
+            }
+            return sb.ToString();
+        }
 
         // Use this file to test the maths questions.
         // Save data to txt file.
@@ -21,10 +35,17 @@ namespace OOPConsole
             string value = random.Next(1,13);
             float correctAnswer;
 
+            string randomString = RandomStringGenerator.Generate(1);
+
+            // Display the question
+            Console.WriteLine("What is " + num1 + " " + randomString + " " + num2 + " = ?")
+
+
+
             string User_input = Console.ReadLine();
 
             // Times
-            if (value == "*")
+            if (randomString == "*")
             {
                 correctAnswer = num1 * num2;
                 if (User_input == correctAnswer)
@@ -34,13 +55,13 @@ namespace OOPConsole
                 }
                 else
                 {
-                    Console.WriteLine("Incorrect! " + num1 " * " + num2 + "=" + correctAnswer);
+                    Console.WriteLine("Incorrect! " + num1 " * " + num2 + " =" + correctAnswer);
                     TestLoop();
  
                 }
             }
             // Add
-            else if (value == "+")
+            else if (randomString == "+")
             {
                 correctAnswer = num1 + num2;
                 if (User_input == correctAnswer)
@@ -51,13 +72,13 @@ namespace OOPConsole
                 }
                 else
                 {
-                    Console.WriteLine("Incorrect! " + num1 " + " + num2 + "=" + correctAnswer);
+                    Console.WriteLine("Incorrect! " + num1 " + " + num2 + " =" + correctAnswer);
                     TestLoop();
                 }
             }
 
             // Subtract
-            else if (value == "-")
+            else if (randomString == "-")
             {
                 correctAnswer = num1 - num2;
                 if (User_input == correctAnswer)
@@ -67,13 +88,13 @@ namespace OOPConsole
                 }
                 else
                 {
-                    Console.WriteLine("Incorrect! " + num1 " - " + num2 + "=" + correctAnswer);
+                    Console.WriteLine("Incorrect! " + num1 " - " + num2 + " = " + correctAnswer);
                     TestLoop();
                 }
             }
 
             // Divide
-            else if (value == "/")
+            else if (randomString == "/")
             {
                 correctAnswer = num1 / num2;
                 if (User_input == correctAnswer)
@@ -83,7 +104,7 @@ namespace OOPConsole
                 }
                 else
                 {
-                    Console.WriteLine("Incorrect! " + num1 " / " + num2 + "=" + correctAnswer);
+                    Console.WriteLine("Incorrect! " + num1 " / " + num2 + " = " + correctAnswer);
                     TestLoop();
                 }
             }

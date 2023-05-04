@@ -20,7 +20,7 @@ namespace OOPConsole
             Console.Clear();
             Console.WriteLine("");
             Console.WriteLine("Welcome to the LinCode Tutorial.");
-            Console.WriteLine("------------------------");
+            Console.WriteLine("--------------------------------");
             Console.WriteLine("");
             Console.WriteLine("1. Tutorial.");
             Console.WriteLine("2. Deal 3 cards.");
